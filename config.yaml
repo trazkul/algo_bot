@@ -1,0 +1,21 @@
+bot:
+  exchange: BYBIT
+  symbol: BTCUSDT
+  category: linear
+  account_type: UNIFIED
+  order_qty: "0.001"
+  interval_sec: 5
+  recv_window: 5000
+  fill_delay_ms: 300
+  max_volume_usdt: "1000"
+  dry_run: false
+  testnet: true
+api:
+  key: "${BYBIT_API_KEY}"
+  secret: "${BYBIT_API_SECRET}"
+binance_api:
+  key: "${BINANCE_API_KEY}"
+  secret: "${BINANCE_API_SECRET}"
+logging:
+  level: INFO
+  file: "bot.log"
